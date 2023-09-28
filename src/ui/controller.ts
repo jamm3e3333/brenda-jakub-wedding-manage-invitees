@@ -2,13 +2,11 @@ import { NextFunction, Request, RequestHandler, Response } from 'express';
 import * as logger from 'firebase-functions/logger';
 import { createInviteeHandler } from '../application/command/create-invitee/create-invitee.handler';
 import { BaseApplicationError } from '../application/error/base-application.error';
-import { helloHandler } from '../application/query/hello.handler';
 import { validateRequest, RequestValidation } from './ajv.validator';
 import { ValidationError } from './error/validation.error';
 
 export const healthCheckController: RequestHandler = (_req, res) => {
-  const data = helloHandler();
-  res.status(200).send({ message: data });
+  res.status(200).send({ message: 'hello' });
 };
 
 export const createInviteeController: RequestHandler = async (req, _res, _next) => {

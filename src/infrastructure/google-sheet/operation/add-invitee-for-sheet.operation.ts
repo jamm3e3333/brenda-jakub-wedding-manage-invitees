@@ -15,7 +15,7 @@ export const writeInviteeOperation = async (invitee: CreateInviteeMessage) => {
           `${invitee.name} ${invitee.surname}`,
           invitee.email,
           invitee.phone,
-          invitee.isAttending ? 'no' : 'yes',
+          invitee.isAttending ? 'yes' : 'no',
           invitee.personDescription ?? '',
           invitee.foodRestriction ?? '',
           invitee.questionOrComment ?? '',
