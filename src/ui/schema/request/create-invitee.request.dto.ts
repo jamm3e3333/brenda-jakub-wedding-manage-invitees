@@ -9,7 +9,7 @@ export const createInviteeSchema: SomeJSONSchema = {
     email: { 'type': 'string', 'isEmail': true },
     isAttending: { type: 'boolean' },
     personDescription: { type: 'string' },
-    fooRestriction: { type: 'string' },
+    foodRestriction: { type: 'string' },
     questionOrComment: { type: 'string' },
 
   },
