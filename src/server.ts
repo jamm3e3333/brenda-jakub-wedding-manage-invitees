@@ -7,11 +7,11 @@ import {
 } from './ui/controller';
 import { loggerMiddleware } from './ui/middleware/logger.middleware';
 import { createInviteeSchema } from './ui/schema/request/create-invitee.request.dto';
-import * as cors from 'cors'
+import * as cors from 'cors';
 
 const serverCors = cors({
   origin: 'https://www.jbwedding.info',
-})
+});
 
 const server = express();
 server.use(express.json());

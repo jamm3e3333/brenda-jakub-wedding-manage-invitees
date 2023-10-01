@@ -9,7 +9,7 @@ export class InviteeAlreadyExist extends BaseApplicationError {
     super();
     this.message = message;
     this.name = 'ValidationError';
-    this.statusCode = 400;
+    this.statusCode = 403;
   }
 
   static create(inviteePhone: string, inviteeEmail: string) {
