@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Inputs and Textareas</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 60%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-row input, 
+        .form-row textarea {
+            width: 48%; /* Since we want two items per row, and factoring in a bit of margin */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-row textarea {
+            height: 100px;
+            resize: vertical; /* Allows the user to resize the textarea vertically only */
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- You can duplicate these rows as needed -->
+        <div class="form-row">
+            <input type="text" placeholder="Input 1">
+            <input type="text" placeholder="Input 2">
+        </div>
+        <div class="form-row">
+            <textarea placeholder="Textarea 1"></textarea>
+            <textarea placeholder="Textarea 2"></textarea>
+        </div>
+        
+        <!-- Repeat above blocks for more elements -->
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
