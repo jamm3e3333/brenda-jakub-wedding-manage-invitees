@@ -5,7 +5,7 @@ export const createInviteeSchema: SomeJSONSchema = {
   properties: {
     name: { type: 'string' },
     surname: { type: 'string' },
-    phone: { 'type': 'string', 'isPhoneNumber': true },
+    phone: { 'type': 'string' },
     email: { 'type': 'string', 'isEmail': true },
     isAttending: { type: 'boolean' },
     personDescription: { type: 'string' },
